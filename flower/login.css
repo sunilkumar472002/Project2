@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+}
+.logo{
+    width: 100px;
+    margin-left:580px;
+    height: auto;
+}
+
+ header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 7%;
+    transition: all .50s ease;
+}
+
+
+                          /* back ground video editing  */
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-mainframe{
+     justify-content: center;
+     margin-top: 250px;
+     margin-left: 600px;
+     padding: 20px;
+     width: 370px;
+     background-color: black;
+     border-radius: 30px;
+     background: transparent;
+     backdrop-filter: 0px 0px 20px black;    
+}
+
+fieldset{
+    position: absolute;
+    width: 470px;
+    height: 440px;
+    border-radius: 100px;
+    margin-top: -40px;
+    margin-left: 530px;
+    z-index: -1;
+    background: rgba(241, 116, 143,0.7);
+    box-shadow: #010101 ;
+    border: none;
+}
+                                        /* top login button  */
+h3{
+    padding-left: 90px;
+    color: #fff;
+    font-size: 27px;
+}
+
+.dont-have-an-account{
+    padding-left: 20px;
+}
+.btn-down{
+    color:palevioletred;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid ;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+.btn-down:hover {
+    color: white;
+  }
+
+  .btn-down::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color:var(--main-color);
+    z-index: -1;
+    transition: all 1s;
+  }
+
+  .btn-down:hover::before {
+    width: 160%;
+  }
+
+  a{
+    color: #fff;
+  }
+
+  #email{
+    margin-top: -40px;
+    position: absolute;
+    margin-left: 90px;
+  }
+
+  #password{
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 70px;
+  }
+  ::placeholder{
+    text-align: center;
+}
+

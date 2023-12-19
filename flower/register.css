@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+:root{
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem
+}
+.logo{
+    width: 100px;
+    margin-left:580px;
+    height: auto;
+}
+
+ header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 7%;
+    transition: all .50s ease;
+}
+
+                          /* back ground video editing  */
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-mainframe{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 400px;
+    border:none;
+    border-radius: 70px;
+    padding: 10px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(241, 116, 143,0.7);
+    box-shadow: #010101 ;
+    /* filter: blur(1px); */
+}
+form{
+    margin-top: 50px;
+    /* padding: 10px; */
+}
+::placeholder{
+    text-align: center;
+    align-items: center;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+input{
+    height: 30px;
+    width: 170px;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-down{
+    color:palevioletred;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid ;
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+
+.btn-down:hover {
+    color: white;
+  }
+
+.btn-down::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color:var(--main-color);
+  z-index: -1;
+  transition: all 1s;
+}
+.btn-down:hover::before {
+  width: 160%;
+}
+
